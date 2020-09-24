@@ -59,6 +59,7 @@ export default {
     axios
         .get('http://127.0.0.1:8000/date/updated/')
         .then( response => {
+          console.log(response.data.date);
           this.dateUpdated = response.data.date;
         });
   },
